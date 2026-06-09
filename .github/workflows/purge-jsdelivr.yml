@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Purge jsDelivr
-        run: curl -fsSL --retry 3 "https://purge.jsdelivr.net/gh/itisthestars/pain-update@main/update.json"
+        run: |
+          curl -L "https://purge.jsdelivr.net/gh/itisthestars/pain-update@main/update.json"
