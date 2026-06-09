@@ -5,6 +5,6 @@
     "versionCode": 101,
     "description": "这是一个新的文件",
     "url": "https://你的下载地址/app.apk",
-    "forceUpdate":true
+    "forceUpdate":false
   }
 }
