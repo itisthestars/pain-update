@@ -1,0 +1,19 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "update.json"
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Purge jsDelivr
+        run: curl -fsSL --retry 3 "https://purge.jsdelivr.net/gh/itisthestars/pain-update@main/update.json"
