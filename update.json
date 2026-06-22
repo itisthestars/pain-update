@@ -1,8 +1,8 @@
 {
   "code": "00000",
   "data": {
-    "versionName": "1.0.2",
-    "versionCode": 102,
+    "versionName": "1.0.0",
+    "versionCode": 100,
     "description": "这是版本更新描述信息",
     "url": "http://47.239.49.118:8888/down/Tm0qCyygstoZ.apk",
     "forceUpdate":false
